@@ -1,31 +1,70 @@
-# Flask-Web-App-for-Finding-Similar-Songs-using-LSH
+# Finding Similar Songs using Locality-Sensitive Hashing 🎵
 
-This is a simple Flask application that allows you to analyze the similarity between your music files based on their MFCC (Mel-Frequency Cepstral Coefficients) features.
+A Flask web application that analyzes music similarity using MFCC (Mel-Frequency Cepstral Coefficients) features and Locality-Sensitive Hashing (LSH) techniques.
 
-## Installation
-- Clone this repository to your local machine.
-- Install the required dependencies using pip:
-- pip install flask pandas numpy librosa datasketch
+## 🌟 Features
 
-## Usage
-- Navigate to the project directory in your terminal.
-- Run the Flask app using the command:
-`python3 app.py`
-- Open your web browser and go to http://localhost:5000.
-- Click the "Choose File" button and select a music file to analyze.
-- Click the "Analyse" button to analyze the selected file.
+- **Audio Analysis**: Extract MFCC features from music files
+- **Similarity Detection**: Find approximate nearest neighbors using LSH
+- **Web Interface**: Simple Flask-based UI for file upload and analysis
+- **Similarity Threshold**: Returns matches with Jaccard similarity > 0.5
 
-The application will return a list of approximate nearest neighbors with Jaccard similarity >0.5 based on their MFCC features.
+## 🚀 Getting Started
 
-## Libraries
-This application was created using the following libraries:
+### Prerequisites
 
-- Flask
-- Pandas
-- NumPy
-- LibROSA
-- DataSketch
+- Python 3
+- pip package manager
+- Git (for cloning the repository)
 
-## Collaborators
+### Required Libraries
+
+- Flask: Web application framework
+- Pandas: Data manipulation
+- NumPy: Numerical computations
+- LibROSA: Audio processing
+- DataSketch: LSH implementation
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/talalmuzaffar/Finding-Similar-Songs-using-Locality-Sensitive-Hashing.git
+   cd Finding-Similar-Songs-using-Locality-Sensitive-Hashing
+   ```
+
+2. Install required dependencies:
+   ```bash
+   pip install flask pandas numpy librosa datasketch
+   ```
+
+3. Run the application:
+   ```bash
+   python3 app.py
+   ```
+
+## 💡 Usage
+
+1. Start the Flask application
+2. Access the web interface at http://localhost:5000
+3. Use the "Choose File" button to select a music file
+4. Click "Analyse" to process the file
+5. View the list of similar songs based on MFCC features
+
+## 📁 Project Structure
+
+```
+Finding-Similar-Songs-using-Locality-Sensitive-Hashing/
+├── app.py          # Flask application and core logic
+└── README.md       # Project documentation
+```
+
+## 👥 Authors
+
+- Talal Muzaffar - [GitHub](https://github.com/talalmuzaffar)
 - Faizan Ahmad
 - Muhammad Farhan
+
+## 📞 Support
+
+For issues and questions, please [open an issue](https://github.com/talalmuzaffar/Finding-Similar-Songs-using-Locality-Sensitive-Hashing/issues) on GitHub.
