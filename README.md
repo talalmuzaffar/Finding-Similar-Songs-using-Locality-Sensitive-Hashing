@@ -55,8 +55,14 @@ A Flask web application that analyzes music similarity using MFCC (Mel-Frequency
 
 ```
 Finding-Similar-Songs-using-Locality-Sensitive-Hashing/
-├── app.py          # Flask application and core logic
-└── README.md       # Project documentation
+├── app.py                  # Entry point: creates the Flask app and registers the routes
+├── similar_songs_lsh/
+│   ├── __init__.py
+│   ├── views.py            # Routes: upload page and /analyse
+│   ├── features.py         # MFCC feature extraction with LibROSA
+│   └── lsh.py              # Nearest neighbour search with MinHash LSH Forest
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 ```
 
 ## 👥 Authors
